@@ -10,8 +10,19 @@
 </head>
 
 <body>
+<!-- Entry Screen -->
+<div id="entryScreen" class="entry-screen">
+  <div class="entry-card">
+    <h1>Welcome</h1>
+    <button onclick="enterPage()">Enter 🎉</button>
+  </div>
+</div>
 
-<div class="story">
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+<div class="story" id="mainContent" style="display:none;">
 
   <div class="bg"></div>
   <div class="overlay"></div>
@@ -120,8 +131,6 @@
 
 <!-- External JS -->
 <script src="script.js"></script>
-<audio id="bgMusic" loop>
-  <source src="music.mp3" type="audio/mpeg">
-        </audio>
+
 </body>
 </html>
